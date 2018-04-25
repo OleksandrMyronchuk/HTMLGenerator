@@ -18,6 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstracttag.h" />
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="htmlgenerator.h" />
+    <ClInclude Include="htmltable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstracttag.cpp" />
+    <ClCompile Include="htmlgenerator.cpp" />
+    <ClCompile Include="htmltable.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F1FBB6ED-C3A9-4D78-8DF6-38D6DD0D0922}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,14 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="HTMLElement.h" />
-    <ClInclude Include="HTMLGenerator.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="HTMLElement.cpp" />
-    <ClCompile Include="HTMLGenerator.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

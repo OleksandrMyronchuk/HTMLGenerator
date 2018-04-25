@@ -11,18 +11,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HTMLGenerator.h">
+    <ClInclude Include="defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HTMLElement.h">
+    <ClInclude Include="htmlgenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="htmltable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="abstracttag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HTMLGenerator.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HTMLElement.cpp">
+    <ClCompile Include="htmlgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="htmltable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abstracttag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
