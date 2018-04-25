@@ -1,34 +1,8 @@
 ﻿  htmltable.cpp
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(18): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(18): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(18): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(18): error C2228: left of '.push_back' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(22): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(22): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(22): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(22): error C2228: left of '.push_back' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(25): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(25): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(25): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(25): error C2228: left of '.at' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(25): error C2228: left of '.push_back' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(45): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(45): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(45): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(45): error C2228: left of '.at' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(45): error C2228: left of '._textContent' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(55): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(55): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(55): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(55): error C2228: left of '.at' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(55): error C2228: left of '._textContent' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): error C2228: left of '._child' must have class/struct/union
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): note: type is 'abstractTag *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): note: did you intend to use '->' instead?
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): error C2228: left of '.at' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): error C2228: left of '._attributeName' must have class/struct/union
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmltable.cpp(56): error C2228: left of '.push_back' must have class/struct/union
   htmlgenerator.cpp
-c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmlgenerator.cpp(34): error C2664: 'void HTMLGenerator::_printHTMLDoc(HTMLGenerator *,unsigned int)': cannot convert argument 1 from 'abstractTag **' to 'HTMLGenerator *'
-  c:\users\alexander\documents\visual studio 2015\projects\htmlgenerator\htmlgenerator\htmlgenerator.cpp(34): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
   Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+  HTMLGenerator.vcxproj -> C:\Users\Alexander\documents\visual studio 2015\Projects\HTMLGenerator\Debug\HTMLGenerator.exe
+  HTMLGenerator.vcxproj -> C:\Users\Alexander\documents\visual studio 2015\Projects\HTMLGenerator\Debug\HTMLGenerator.pdb (Full PDB)

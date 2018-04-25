@@ -6,25 +6,19 @@ HTMLTable::HTMLTable(__uint32 row, __uint32 col) : HTMLGenerator("table")
 #define defRow defTbody.at(0)._child
 #define defCol(rowInd) defRow.at(rowInd)._child
 
-	defTbody.push_back( (abstractTag*)(new HTMLGenerator("tbody")) );/*table->tbody*/
+	defTbody.push_back( HTMLGenerator("tbody") );/*table->tbody*/
 
 	//del	
 	this->_attributeName.push_back( std::make_pair("border", "1") );
 	this->_attributeName.push_back(std::make_pair("class", "ex"));
 	//del
 
-	//((abstractTag*)(this->_child.at(0))).
-
-	//((HTMLGenerator*)(this->_child.at(0)))._child.push_back((abstractTag*)(new HTMLGenerator("tr")));
-
-	static_cast<HTMLGenerator*>(this->_child.at(0))._child;
-
 	for (__uint32 i(0); i < row; i++)
 	{
-		defRow.push_back( (abstractTag*)(new HTMLGenerator("tr")) );/*table->tbody->row*/
+		defRow.push_back( HTMLGenerator("tr") );/*table->tbody->row*/
 		for (__uint32 j(0); j < col; j++)
 		{			
-			defCol(i).push_back( (abstractTag*)(new HTMLGenerator("td")) );/*table->tbody->row->col*/
+			defCol(i).push_back( HTMLGenerator("td") );/*table->tbody->row->col*/
 		}
 	}
 #undef defTbody

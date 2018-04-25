@@ -8,7 +8,7 @@
 #include "defines.h"
 #include "abstracttag.h"
 
-class HTMLGenerator : public abstractTag
+class HTMLGenerator //: public abstractTag
 {
 private:
 	void _printHTMLDoc(HTMLGenerator *depth, __uint32 ind);
@@ -18,7 +18,7 @@ public:
 	std::string _tagName;
 	std::vector<std::pair<std::string, std::string>> _attributeName;
 	std::string _textContent;
-	std::vector<abstractTag*> _child;
+	std::vector<HTMLGenerator> _child;
 
 	std::string printHTMLDoc();
 

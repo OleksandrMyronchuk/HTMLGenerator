@@ -19,20 +19,20 @@ int main(int argc, char *argv[])
 
 	HTMLGenerator *html = new HTMLGenerator("html");
 
-	html->_child.push_back( (abstractTag*)(new HTMLGenerator("head")) );
-	html->_child.push_back( (abstractTag*)(new HTMLGenerator("body")) );
-	html->_child.push_back( (abstractTag*)(new HTMLTable(4, 8)) );
+	html->_child.push_back( HTMLGenerator("head") );
+	html->_child.push_back( HTMLGenerator("body") );
+	html->_child.push_back( HTMLTable(4, 8) );
 	//HTMLTable *tab = new HTMLTable(4, 8);
 
-
-	((HTMLTable*)(html->_child.at(0)))->setToCell(1, 1, "str");
-	((HTMLTable*)(html->_child.at(0)))->setToCell(4, 8, "str");
+	//static_cast<HTMLTable*>(html->_child.at(0)).
+	/*html->_child.at(0)->setToCell(1, 1, "str");
+	html->_child.at(0)->setToCell(4, 8, "str");*/
 	/*tab->setToCell(1, 1, "str");
 	tab->setToCell(4, 8, "str");
 	
 	std::cout << tab->printHTMLDoc();*/
 	
-	html->printHTMLDoc();
+	std::cout << html->printHTMLDoc();
 
 	//
 	fout->close();
