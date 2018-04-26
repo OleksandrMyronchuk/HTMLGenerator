@@ -1,8 +1,3 @@
-﻿  htmltable.cpp
-  htmlgenerator.cpp
-  Generating Code...
-  Compiling...
-  main.cpp
-  Generating Code...
+﻿  tableTag.cpp
   HTMLGenerator.vcxproj -> C:\Users\Alexander\documents\visual studio 2015\Projects\HTMLGenerator\Debug\HTMLGenerator.exe
   HTMLGenerator.vcxproj -> C:\Users\Alexander\documents\visual studio 2015\Projects\HTMLGenerator\Debug\HTMLGenerator.pdb (Full PDB)

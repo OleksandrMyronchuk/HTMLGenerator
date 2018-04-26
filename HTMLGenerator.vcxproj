@@ -21,13 +21,13 @@
   <ItemGroup>
     <ClInclude Include="abstracttag.h" />
     <ClInclude Include="defines.h" />
-    <ClInclude Include="htmlgenerator.h" />
-    <ClInclude Include="htmltable.h" />
+    <ClInclude Include="tag.h" />
+    <ClInclude Include="tableTag.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstracttag.cpp" />
-    <ClCompile Include="htmlgenerator.cpp" />
-    <ClCompile Include="htmltable.cpp" />
+    <ClCompile Include="tag.cpp" />
+    <ClCompile Include="tableTag.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

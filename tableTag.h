@@ -2,16 +2,16 @@
 #define HTMLTABLE_H
 
 #include "defines.h"
-#include "htmlgenerator.h"
+#include "tag.h"
 
-class HTMLTable : public HTMLGenerator
+class tableTag : public tag
 {
 public:	
 	void setToCell(
 		__uint32 row,
 		__uint32 col, 
 		std::string val, 
-		std::pair<std::string, 
+		std::pair<std::string,
 		std::string> attributeName
 	);
 	void setToCell(
@@ -19,8 +19,8 @@ public:
 		__uint32 col,
 		std::string val
 	);
-	HTMLTable(__uint32 row, __uint32 col);
-	~HTMLTable();
+	tableTag(__uint32 row, __uint32 col);
+	~tableTag();
 };
 
 #endif // HTMLTABLE_H

@@ -1,14 +1,14 @@
-#include "htmlgenerator.h"
+#include "tag.h"
 
-HTMLGenerator::HTMLGenerator(std::string tagName) : _tagName(tagName)
+tag::tag(std::string tagName) : _tagName(tagName)
 {
 }
 
-HTMLGenerator::~HTMLGenerator()
+tag::~tag()
 {
 }
 
-void HTMLGenerator::_printHTMLDoc(HTMLGenerator *depth, __uint32 ind = 0)
+void tag::_printHTMLDoc(tag *depth, __uint32 ind = 0)
 {
 	/*Start Tag*/
 	this->_printResult += "<" + depth->_tagName;
@@ -31,7 +31,7 @@ void HTMLGenerator::_printHTMLDoc(HTMLGenerator *depth, __uint32 ind = 0)
 	{
 		if (!depth->_child.empty())
 		{
-			_printHTMLDoc(&(depth->_child.at(i)));
+			_printHTMLDoc( (tag*)(depth->_child.at(i)) );
 		}
 	}
 
@@ -39,7 +39,7 @@ void HTMLGenerator::_printHTMLDoc(HTMLGenerator *depth, __uint32 ind = 0)
 	this->_printResult += "</" + depth->_tagName + ">";
 }
 
-std::string HTMLGenerator::printHTMLDoc()
+std::string tag::printHTMLDoc()
 {
 	_printResult.clear();
 	this->_printHTMLDoc(this);

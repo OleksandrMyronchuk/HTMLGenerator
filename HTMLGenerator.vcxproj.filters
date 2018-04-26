@@ -14,13 +14,13 @@
     <ClInclude Include="defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="htmlgenerator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="htmltable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="abstracttag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tableTag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -28,13 +28,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="htmlgenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="htmltable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="abstracttag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableTag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

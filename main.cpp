@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "htmltable.h"
+#include "tableTag.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,16 +17,16 @@ int main(int argc, char *argv[])
 
 	//
 
-	HTMLGenerator *html = new HTMLGenerator("html");
+	tag *html = new tag("html");
 
-	html->_child.push_back( HTMLGenerator("head") );
-	html->_child.push_back( HTMLGenerator("body") );
-	html->_child.push_back( HTMLTable(4, 8) );
-	//HTMLTable *tab = new HTMLTable(4, 8);
+	html->_child.push_back( new tag("head") );
+	html->_child.push_back( new tag("body") );
+	html->_child.push_back( new tableTag(4, 8) );
+	
 
-	//static_cast<HTMLTable*>(html->_child.at(0)).
-	/*html->_child.at(0)->setToCell(1, 1, "str");
-	html->_child.at(0)->setToCell(4, 8, "str");*/
+	((tableTag*)(html->_child.at(2)))->setToCell(1, 1, "str");
+	((tableTag*)(html->_child.at(2)))->setToCell(4, 8, "str");
+
 	/*tab->setToCell(1, 1, "str");
 	tab->setToCell(4, 8, "str");
 	
